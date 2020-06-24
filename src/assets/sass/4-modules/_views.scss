@@ -1,0 +1,205 @@
+
+
+
+.view1 {
+  // background-color: #f9f8fe;
+  // border-radius: 20px;
+  // padding: 10px;
+
+
+  .thumb {
+    width:100%;
+    height: auto; 
+    min-height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color:#ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    
+  }
+
+  &.hr-item {
+    .thumb {
+      max-width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .kicker {
+    font-size: 10px;
+    color: $primary;
+    text-transform: uppercase;
+    @media (min-width: 992px) {
+        font-size: 12px;
+    }
+
+  }
+
+  .title-product {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 12px;
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }
+  }
+
+  .oldPrice {
+    font-size: 10px;
+    text-decoration:line-through;
+    color: #999999;
+    @media (min-width: 992px) {
+        font-size: 12px;
+    }
+  }
+
+  .price {
+    span {
+      font-size: 14px;
+      color: black;
+      display: block;
+      @media (min-width: 992px) {
+          font-size: 24px;
+      }
+
+    }
+
+    small {
+      font-size: 8px;
+      border:1px solid $primary;
+      background-color: $primary;
+      color: white;
+      padding: 0px 3px 1px;
+      display: inline-block;
+      border-radius: 25px;
+      position: relative;
+      top: -3px;
+
+    }
+  }
+
+  &.flex-column {
+    // SE SACA COLOR DE FONDO POR BLOQUE DE FONDO GRIS
+    //background-color: #fff;
+    border-radius: 0px;
+    padding: 0px;
+    position: relative;
+    .thumb{
+      margin-right: 0;
+    }
+  }
+}
+
+.view1_overlay {
+  position: relative;
+  .media {
+    width: 100%;
+
+
+    .thumb {
+      min-width: 100%!important;
+      margin:0;
+      border-radius: 0;
+      height: 100%;
+    } 
+  }
+
+  .item-content {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background-image: linear-gradient(0deg, black, transparent);
+
+    .title-product, .excerpt-view {
+      color:#fff;
+    }
+
+    .read-more-box  {
+      display: none!important;
+    }
+
+    
+  }
+
+}
+
+.lay_blog {
+  > .view1 {
+    width:100%;
+
+  }
+  .mini-articles-guia-padres {
+    width:100%;
+    margin-top:12px;
+    @media (min-width: 768px) {
+      margin-top:0;
+      padding-left: 24px;
+    }
+  
+    .view1 {
+      width: calc(50% - 12px);
+
+      .thumb {
+        min-width: 100%!important;
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 0;
+      }
+
+      .item-content {
+        .title-product {
+          min-height: inherit!important;
+          @media (min-width: 992px){
+              font-size: 18px;
+              margin-bottom: 12px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+// vista brand btn
+
+.bt_card-brand {
+  border-radius: 8px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  //max-width: 272px;
+  
+
+  .bt_brand-img {
+      img {
+          width: 100%;
+          height: auto;
+      }
+  }
+
+
+  .bt_link-btn-bullet {
+
+      font-size: 12px;
+      color: #4c4c4c!important;
+      line-height: 2.33;
+      font-family: Muli;
+      padding: 0 10px;
+       img {
+         width: 25px;
+       }
+  }
+
+  @media (min-width: 992px) {
+    .bt_link-btn-bullet {
+      display: none!important;
+    }
+  }
+}

@@ -1,0 +1,803 @@
+$custom-file-text: (
+  en: "Browse",
+  es: "Elegir"
+);
+
+
+/* colores btns Styles -------------------- */
+.pinkBtn {
+  background-color: lighten($bt_pink, 35%) ;
+  color: $bt_pink;
+
+  &:hover {
+      background-color: lighten($bt_pink, 32%) ;
+      color: $bt_pink;
+  }
+}
+.pink-capsule {
+  background-color: lighten($bt_pink, 35%)!important ;
+  .kicker {
+    color: $bt_pink;
+  }
+}
+
+.purpleBtn {
+  background-color: lighten($bt_purple, 32%) ;
+  color: $bt_purple;
+
+  &:hover {
+      background-color: lighten($bt_purple, 30%) ;
+      color: $bt_purple;
+  }
+}
+
+.purple-capsule {
+  background-color: lighten($bt_purple, 32%)!important ;
+  .kicker {
+    color: $bt_purple;
+  }
+}
+
+.greenBtn {
+  background-color: lighten($bt_green, 32%) ;
+  color: $bt_green;
+
+  &:hover {
+      background-color: lighten($bt_green, 30%) ;
+      color: $bt_green;
+  }
+}
+
+.green-capsule {
+  background-color: lighten($bt_green, 32%)!important;
+  .kicker {
+    color: $bt_green;
+  }
+}
+
+.orangeBtn, .yellowBtn {
+  background-color: lighten($bt_yellow, 22%) ;
+  color: $bt_yellow;
+
+  &:hover {
+      background-color: lighten($bt_yellow, 18%) ;
+      color: $bt_yellow;
+  }
+  
+
+}
+
+.yellow-capsule {
+  background-color: lighten($bt_yellow, 22%)!important ;
+  .kicker {
+    color: $bt_yellow;
+  }
+}
+
+.blueBtn {
+  background-color: lighten($bt_blue, 32%) ;
+  color: $bt_blue;
+
+  &:hover {
+      background-color: lighten($bt_blue, 30%) ;
+      color: $bt_blue;
+  }
+
+}
+
+.blue-capsule {
+  background-color: lighten($bt_blue, 32%)!important ;
+  .kicker {
+    color: $bt_blue;
+  }
+}
+
+
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "Examinar";
+}
+
+
+
+
+.bt_category-highlight {
+    min-width: 240px;
+    text-align: center;
+    min-height: 92px;
+    border-radius: 14.8px;
+    background-color: #f7f6f9;
+    font-size: 12px;
+    color: #999999;
+    padding: 0 20px;
+    a {
+        color: #999999;
+        text-transform: uppercase;
+    }
+}
+
+.bt_tema-pills {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: $bt_yellow;
+  .badge{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    border: 2px solid white;
+    line-height: 19px;
+  }
+}
+
+.badge {
+  width:28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $bt_pink;
+  color: white;
+  font-size:12px ;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+
+}
+
+.pink-btn {
+    border-radius: 6px;
+   background-color: #f7dceb;
+   font-size: 12px;
+   color: #de5aa5;
+   border-color: #f7dceb;
+   
+}
+
+
+
+.orange-btn, .yellow-btn {
+    border-radius: 6px;
+   background-color: #faecdd;
+   font-size: 12px;
+   color: #f6bd84;
+   border-color: #faecdd;
+}
+
+.green-btn {
+    border-radius: 6px;
+   background-color: #d9f3f0;
+   font-size: 12px;
+   color: #64d4c7;
+   border-color: #d9f3f0;
+}
+
+.purple-btn {
+    border-radius: 6px;
+   font-size: 12px;
+   border-color: #c7bcf0;
+    background-color: #c7bcf0;
+    color: #785ee5;
+}
+
+.login-btn {
+
+
+    a {
+        font-size: 12px;
+        color: black
+    }
+    
+
+}
+
+.register-btn {
+
+    a {
+        font-size: 12px;
+        color: #785ee5;
+    }
+    
+
+}
+
+.autor_name {
+  margin-left:5px;
+  p {
+    margin:0;
+    font-size: 16px;
+  }
+  small {
+    font-size: 12px;
+    color: $gray-500
+  }
+}
+
+// Spinner
+
+.bt_loading {
+    width: 160px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    /* align-content: center; */
+    align-items: center;
+    margin-bottom: 20px;
+
+    span {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        color:#999;
+    }
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+
+  .bb-1 {
+    border-bottom: 1px solid $gray-200;
+  }
+
+  .bt-1 {
+    border-top: 1px solid $gray-300;
+  }
+
+  .lh-1 {
+    height: 10px;
+    width: auto;
+  }
+
+  .lh-2 {
+    height: 20px;
+    width: auto;
+  }
+
+  .lh-3 {
+    height: 30px;
+    width: auto;
+  }
+
+  .lw-1 {
+    width: 10px;
+    height: auto;
+  }
+
+  .lw-2 {
+    width: 20px;
+    height: auto;
+  }
+
+  .lw-3 {
+    width: 30px;
+    height: auto;
+  }
+
+  .tachado {
+    text-decoration: line-through;
+
+  }
+
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #785ee5;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #785ee5 transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+.breadcumbs {
+  li {
+    margin-right: 10px;
+    a {
+      font-size: 10px;
+      @media (min-width: 992px) {
+        font-size: 12px;
+      }
+      line-height: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.owl-theme .owl-nav {
+  width: calc(100% + 30px);
+  display: flex;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-top: -10px ;
+}
+
+.labelFlash {
+  font-size: 8px;
+  color: $bt_purple;
+}
+
+// colores btn aislados
+
+.default-btn {
+ border-radius: 6px;
+ background-color:  lighten($bt_pink, 32%);
+ font-size: 12px;
+ color: $bt_pink;
+ border-color: lighten($bt_pink, 32%);
+
+ &:hover , &:active {
+  background-color: lighten($bt_pink, 30%)!important;
+  color: $bt_pink!important;
+  border-color: lighten($bt_pink, 30%)!important;
+}
+}
+
+
+
+.pink-btn {
+  border-radius: 6px;
+ background-color:  lighten($bt_pink, 32%);
+ font-size: 12px;
+ color: $bt_pink;
+ border-color: lighten($bt_pink, 32%);
+
+ &:hover , &:active {
+  background-color: lighten($bt_pink, 30%)!important;
+  color: $bt_pink!important;
+  border-color: lighten($bt_pink, 30%)!important;
+}
+}
+
+
+
+.orange-btn, .yellow-btn {
+  border-radius: 6px;
+ background-color: lighten($bt_yellow, 22%);
+ font-size: 12px;
+ color: $bt_yellow;
+ border-color: lighten($bt_yellow, 22%);
+
+ &:hover , &:active {
+      background-color: lighten($bt_yellow, 20%)!important;
+      color: $bt_yellow!important;
+      border-color: lighten($bt_yellow, 20%)!important;
+  }
+}
+
+.green-btn {
+  border-radius: 6px;
+ background-color: lighten($bt_green, 32%);
+ font-size: 12px;
+ color: $bt_green;
+ border-color: lighten($bt_green, 32%);
+
+ &:hover , &:active {
+  background-color: lighten($bt_green, 30%)!important;
+  color: $bt_green!important;
+  border-color: lighten($bt_green, 30%)!important;
+}
+}
+
+.purple-btn {
+  border-radius: 6px;
+  font-size: 12px;
+  border-color: lighten($bt_purple, 32%);
+  background-color: lighten($bt_purple, 32%);
+  color: $bt_purple;
+
+  &:hover , &:active {
+      background-color: lighten($bt_purple, 30%)!important;
+      color: $bt_purple!important;
+      border-color: lighten($bt_purple, 30%)!important;
+  }
+}
+
+.gray-btn {
+  border-radius: 6px;
+  background-color: lighten($bt_gray_light, 32%)!important;
+  font-size: 12px;
+  color: $bt_gray!important;
+  border-color: lighten($bt_gray_light, 32%)!important;
+
+  &:hover , &:active {
+      background-color: lighten($bt_gray_light, 30%)!important;
+      color: $bt_gray!important;
+      border-color: lighten($bt_gray_light, 30%)!important;
+  }
+}
+
+.face-btn {
+  border-radius: 6px;
+  background-color: lighten(#3b5998, 45%)!important;
+  font-size: 12px;
+  color: #3b5998!important;
+  border-color: lighten(#3b5998, 45%)!important;
+
+  &:hover , &:active {
+      background-color: lighten(#3b5998, 30%)!important;
+      color: #3b5998!important;
+      border-color: lighten(#3b5998, 30%)!important;
+  }
+}
+
+.twitter-btn {
+  border-radius: 6px;
+  background-color: lighten(#1da1f2, 40%)!important;
+  font-size: 12px;
+  color: #1da1f2!important;
+  border-color: lighten(#1da1f2, 40%)!important;
+
+  &:hover , &:active {
+      background-color: lighten(#1da1f2, 30%)!important;
+      color: #1da1f2!important;
+      border-color: lighten(#1da1f2, 30%)!important;
+  }
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px){
+  .container {
+      max-width: 1380px;
+  }
+
+}
+
+.filter-options .form-group {
+  padding-right: 10px;
+}
+
+@media (min-width: 992px) {
+  .filter-options .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .filter-options .form-group .form-control {
+      max-width: inherit!important;
+  }
+
+}
+
+.kicker {
+  font-size: 10px;
+  font-weight: bold;
+
+}
+
+.form-control {
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+
+
+
+
+.gray-select {
+    border-radius: 5px;
+    padding-right: 40px;
+    background-image: url(../img/icons/arrow_down.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: #f8f9fa;
+    border: 0 none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.side-menu-section-title {
+  font-family: Muli;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $gray-600;
+  font-size: 12px;
+  color: #adb5bd;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.resultados .title-section-search {
+  font-family: Muli;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #999;
+  margin-bottom: 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.title-head-component {
+  font-size: 18px;
+  line-height: 1.56;
+  color: black;
+} 
+
+.link-anonimo {
+  font-size: 12px;
+  line-height: 2;
+
+}
+
+.arrow {
+  width:40px;
+  border-top:3px solid #ccc;
+  position: relative;
+
+  &:before {
+    content: '';
+    border-top: 3px solid #ccc;
+    position: absolute;
+    top: 3px;
+    transform: rotate(-45deg);
+    display: block;
+    width: 15px;
+    right: 0;
+
+  }
+
+  &:after {
+    content: '';
+    border-top: 3px solid #ccc;
+    position: absolute;
+    top: -9px;
+    transform: rotate(45deg);
+    display: block;
+    width: 15px;
+    right: 0;
+
+  }
+}
+
+.arrow-right-menu {
+  background-image: url(../img/icons/arrow_next.svg);
+    height: 36px;
+    width: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+} 
+
+.budget {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #f2effc;
+  border-radius: 12px;
+  justify-content: center;
+  padding: 0 15px;
+  font-size: 12px !important;
+  color: #8872e9;
+}
+
+
+
+
+
+
+// Colores Bloques
+
+.pink-block {
+  .nav-link.active, .view1 .kicker {
+    color: $bt_pink ;
+  }
+  .view1 .price small {
+    background-color: $bt_pink ;
+    border-color:$bt_pink ;
+  }
+  .btn-primary {
+    background-color: lighten($bt_pink, 35%);
+    border-color: lighten($bt_pink, 35%);
+    color: $bt_pink;
+    &:hover {
+      background-color: lighten($bt_pink, 30%);
+    border-color: lighten($bt_pink, 30%);
+    }
+  }
+  .btn.btn-outline-secondary.active {
+    color: $bt_pink;
+  }
+}
+
+.yellow-block {
+  .nav-link.active, .view1 .kicker {
+    color: $bt_yellow ;
+  }
+  .view1 .price small {
+    background-color: $bt_yellow ;
+    border-color:$bt_yellow ;
+  }
+  .btn-primary {
+    background-color: lighten($bt_yellow, 23%);
+    border-color: lighten($bt_yellow, 23%);
+    color: $bt_yellow;
+    &:hover {
+      background-color: lighten($bt_yellow, 20%);
+      border-color: lighten($bt_yellow, 20%);
+    }
+  }
+  .btn.btn-outline-secondary.active, .title-section-simple {
+    color: $bt_yellow;
+  }
+
+  .offerTag {
+    background-color: $bt_yellow;
+  }
+
+  .featureIcon {
+    background-color: lighten($bt_yellow, 20%);
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background:$bt_yellow;
+  }
+}
+
+
+.green-block {
+  .nav-link.active, .view1 .kicker {
+    color: $bt_green ;
+  }
+  .view1 .price small {
+    background-color: $bt_green ;
+    border-color:$bt_green ;
+  }
+  .btn-primary {
+    background-color: lighten($bt_green, 23%);
+    border-color: lighten($bt_green, 23%);
+    color: $bt_green;
+    &:hover {
+      background-color: lighten($bt_green, 20%);
+    border-color: lighten($bt_green, 20%);
+    }
+  }
+  .btn.btn-outline-secondary.active, .title-section-simple {
+    color: $bt_green;
+  }
+
+  .offerTag {
+    background-color: $bt_green;
+  }
+
+  .featureIcon {
+    background-color: lighten($bt_green, 20%);
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background:$bt_green;
+  }
+}
+
+
+.blue-block {
+  
+  .nav-link.active, .view1 .kicker, .kicker {
+    color: $bt_blue ;
+  }
+  .view1 .price small {
+    background-color: $bt_blue ;
+    border-color:$bt_blue ;
+  }
+  .btn-primary {
+    background-color: lighten($bt_blue, 32%);
+    border-color: lighten($bt_blue, 32%);
+    color: $bt_blue;
+    &:hover {
+      background-color: lighten($bt_blue, 30%);
+       border-color: lighten($bt_blue, 30%);
+    }
+  }
+  .btn.btn-outline-secondary.active, .title-section-simple {
+    color: $bt_blue;
+  }
+
+  .offerTag {
+    background-color: $bt_blue;
+  }
+
+  .featureIcon {
+    background-color: lighten($bt_blue, 20%);
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background:$bt_blue;
+  }
+}
+
+.purple-block {
+  .nav-link.active, .view1 .kicker {
+    color: $bt_purple ;
+  }
+  .view1 .price small {
+    background-color: $bt_purple ;
+    border-color:$bt_purple ;
+  }
+  .btn-primary {
+    background-color: lighten($bt_purple, 32%);
+    border-color: lighten($bt_purple, 32%);
+    color: $bt_purple;
+    &:hover {
+      background-color: lighten($bt_purple, 30%);
+       border-color: lighten($bt_purple, 30%);
+    }
+  }
+  .btn.btn-outline-secondary.active, .title-section-simple {
+    color: $bt_purple;
+  }
+
+  .offerTag {
+    background-color: $bt_purple;
+  }
+
+  .featureIcon {
+    background-color: lighten($bt_purple, 30%);
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background:$bt_purple;
+  }
+}
+
+.purpleText {
+  color:$bt_purple !important;
+}
+
+.yellowText {
+  color:$bt_yellow !important;
+}
+
+.greenText {
+  color:$bt_green !important;
+}
+
+.pinkText {
+  color:$bt_pink!important;
+}
+
+.blueText {
+  color:$bt_blue !important;
+}
+  

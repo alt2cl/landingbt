@@ -1,12 +1,19 @@
-//import 'jquery/src/jquery';
-//import 'owl.carousel/dist/assets/owl.carousel.css';
-//import 'owl.carousel/dist/assets/owl.theme.default.css';
-//import 'owl.carousel';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+//import 'jquery';
+import 'bootstrap';
+
+//import 'jquery/src/jquery';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'owl.carousel';
+
+
+//import './index.css';
+import './assets/sass/app.scss';
+
+import './assets/js/main.js'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

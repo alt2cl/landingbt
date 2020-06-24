@@ -1,0 +1,41 @@
+
+.hl-conditions {
+    border-radius: 6px;
+    background-color: #f8f6fe;
+    padding: 9px;
+  }
+
+.alert-conditions {
+  border-radius: 6px;
+  background-color: #fdf2e7;
+    padding: 8px 24px;
+    text-align: center;
+    color: #f6bd84;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+.list-conditions {
+  padding: 10px 0;
+}
+
+  .list-conditions > li {
+    padding-left: 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .list-conditions > li p {
+    margin-bottom:5px;
+    line-height: 18px;
+    font-size: 12px;
+  }
+
+  .list-conditions > li > .icon {
+    margin-left: -40px;
+    float:left;
+    max-height: 16px;
+    width: 22px;
+
+  }

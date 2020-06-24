@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//====================================
+// Global Imports
+//====================================
+
+
+// 1- Import bootstrap framework
+@import '1-frameworks/index';
+
+// 2 - Import plugins
+@import '2-plugins/index';
+
+// 3 - Import base style, custom variables and mixins
+@import '3-base/index';
+
+// 4 - Import modules
+@import '4-modules/index';
+
+// 5 - Import layout  styles
+@import '5-layout/index';
+
+// 6 - Import layout  styles
+@import '6-override/index';

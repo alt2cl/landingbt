@@ -1,0 +1,245 @@
+
+.carousel {
+
+    margin-bottom: 40px;
+
+    .carousel-indicators {
+        bottom: -39px;
+        li {
+            background-color: #ebeaf1; 
+            border-radius: 2px;
+    
+            &.active {
+                background-color: #785ee5;
+            }
+        }
+    }
+
+}
+
+.slider-container {
+    position: relative;
+    .customNavigation {
+        
+        .btn {
+            position: absolute;
+            top:50%;
+            z-index: 3;
+
+            &.prev {
+                left: 0;
+
+            }
+
+            &.next {
+                right:0;
+                
+            }
+            
+        }
+    }
+}
+
+#owl-demo {
+    padding-bottom:40px;
+    .owl-item {
+        .item{
+            margin: 0 12px;
+        }
+    }
+}
+
+.carousel-sidebar {
+    .horizontal-list-producto {
+        li {
+            min-width: 96px;
+
+            .title-product {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            .oldPrice {
+                font-size: 10px;
+
+            }
+
+            .price {
+                span {
+                    font-size: 14px;
+                }
+                
+
+            }
+        }
+
+        &.flex-nowrap {
+            overflow-x: auto;
+        }
+    }  
+}
+
+.head-timeline {
+    .navContainer {
+        position: relative;
+        z-index: 5;
+        display: flex;
+    align-items: center;
+
+        .owl-prev, .owl-next {
+            width: 36px;
+    height: 36px;
+    text-align: center;
+    background-color: #dee2e6;
+    border-radius: 50%;
+    margin: 0 3px;
+    border:0 none;
+
+    &:hover, &:focus {
+        background-color: darken(#dee2e6, 5%) ; 
+        outline: none;
+    }
+
+    span {
+        font-size: 20px;
+        display: block;
+        margin-top: -2px;
+    }
+        }
+    }
+}
+
+@mixin colorTimelIneHeader($select-color) {
+    .dotsContainer {
+        .owl-dot {
+            &:hover {
+                border-bottom: 3px solid lighten($select-color, 10%) ;
+            }
+            &.active {
+                border-bottom:3px solid $select-color;
+                button {
+                    span {
+                        color: $select-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.pink-TabsTimeline {
+    @include colorTimelIneHeader($bt_pink);
+}
+
+.purple-TabsTimeline {
+    @include colorTimelIneHeader($bt_purple);
+}
+
+.blue-TabsTimeline {
+    @include colorTimelIneHeader($bt_blue);
+}
+
+.green-TabsTimeline {
+    @include colorTimelIneHeader($bt_green);
+}
+
+.yellow-TabsTimeline {
+    @include colorTimelIneHeader($bt_yellow);
+}
+
+
+
+.dotsContainer {
+    display:flex;
+    .owl-dot {
+        margin-right: 10px;
+        border-bottom: 3px solid #ccc;
+
+        &:hover {
+            border-bottom: 3px solid lighten(#785ee5, 10%) ;
+        }
+        
+
+        &.active {
+            border-bottom:3px solid #785ee5;
+
+
+            button {
+                span {
+                    display: block;
+                    width: auto;
+                    color:#785ee5;
+                }
+            }
+        }
+
+        button {
+            background: none;
+            border:0 none;
+            padding: 5px 10px;
+            min-height: 30px;
+
+            span {
+                position: relative;
+                z-index: -1;
+                display:none;
+                width:30px;
+            }
+
+            &:hover, &:focus {
+                outline: 0 none;
+            }
+        }
+    }
+    
+}
+
+.owl-sale {
+    .view1 {
+        background-color: #f9f8fe;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+.list-pruduct-description {
+    .horizontal-list-producto {
+        padding: 0;
+        li {
+            min-width: calc(45% - 12px);
+
+            @media (min-width: 576px) {
+                min-width: calc(33% - 12px);
+            }
+
+            .title-product {
+                min-height: 40px;
+            }
+
+            
+
+            .description-product {
+                font-style: italic;
+                font-size: 10px;
+                line-height: 12px;
+                color: #999999;
+
+                @media (min-width: 576px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .view1 .thumb {
+                width: 100%;
+            }
+        }
+    }
+}
+

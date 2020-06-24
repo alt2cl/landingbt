@@ -1,0 +1,41 @@
+.rank-head-box {
+    .star-rating-box {
+        margin-left: 10px;
+    }
+}
+
+.star-rating-box {
+    display: flex;
+    align-items: center;
+    .icon-star {
+        width: 18px;
+        height: 17px;
+        margin-right:2px;
+        background-image: url(../img/icons/star.svg);
+        
+
+        &.checked {
+            background-image: url(../img/icons/star-selected.svg);
+        }
+    }
+}
+
+.mini-rating-resume {
+    margin-bottom: 12px;
+    font-style: italic;
+    .star-rating-box {
+        
+        .icon-star{
+            width: 12px;
+            height: 11px;
+            margin-right:1px;
+            background-size: auto 11px;
+        }
+        
+
+    }
+
+    small {
+        margin-left:5px;
+    }
+}
