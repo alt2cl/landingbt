@@ -67,3 +67,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # landingbt
+
+# Cambio de url git
+### `git remote set-url origin git@github.com:ppreyer/first_app.git`
