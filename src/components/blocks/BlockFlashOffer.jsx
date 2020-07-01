@@ -1,11 +1,32 @@
 import React from 'react'
+import WrapperBlock from './../wrappers/WrapperBlock'
 
-const BlockSearch = (props) => {
+import ElementHead from './../elements/ElementHead'
+import iconhead from '../../assets/img/icons/clock-purple.svg'
+
+
+const BlockFlashOffer = (props) => {
     return (
-        <div>
-            Block search {props.name}
-        </div>
+        <React.Fragment>
+            <WrapperBlock>
+                <div className="section">
+                    <div className="component">
+                        <div className="component-head">
+                            <ElementHead   
+                                img={iconhead} 
+                                title="¡Ofertas Flash!" 
+                                body="No te pierdas estas ofertas por un tiempo limitado" 
+                            />
+                        </div>
+                        <div className="component-body">
+
+                        </div>
+                    </div>
+                </div>
+            </WrapperBlock>
+            
+        </React.Fragment>
     )
 }
 
-export default BlockSearch;
+export default BlockFlashOffer;

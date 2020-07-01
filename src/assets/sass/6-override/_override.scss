@@ -213,6 +213,9 @@ a {
         border-radius: 50%;
         background-color: lighten(#000000, 60%);
         margin-bottom: 12px;
+        border-top: inherit;
+        //position: inherit;
+    
 
     
         
@@ -257,90 +260,13 @@ a {
 
 }
 
-.pink-component {
-    .go-btn{
-        .arrow.next{
-            background-color: lighten($bt_pink, 32%);
-            i{
-                background-color: $bt_pink;
-                &:before, &:after {
-                    background-color: $bt_pink;
-                }
-            }
-        }
-        .title-btn-arrow {
-            color:$bt_pink;
-        }
-    }
-}
 
-.orange-component {
-    .go-btn{
-        .arrow.next{
-            background-color: lighten($bt_yellow, 22%);
-            i{
-                background-color: $bt_yellow;
-                &:before, &:after {
-                    background-color: $bt_yellow;
-                }
-            }
-        }
-        .title-btn-arrow {
-            color:$bt_yellow;
-        }
-    }
-}
 
-.blue-component {
-    .go-btn{
-        .arrow.next{
-            background-color: lighten($bt_blue, 32%);
-            i{
-                background-color: $bt_blue;
-                &:before, &:after {
-                    background-color: $bt_blue;
-                }
-            }
-        }
-        .title-btn-arrow {
-            color:$bt_blue;
-        }
-    }
-}
 
-.green-component {
-    .go-btn{
-        .arrow.next{
-            background-color: lighten($bt_green, 32%);
-            i{
-                background-color: $bt_green;
-                &:before, &:after {
-                    background-color: $bt_green;
-                }
-            }
-        }
-        .title-btn-arrow {
-            color:$bt_green;
-        }
-    }
-}
 
-.purple-component {
-    .go-btn{
-        .arrow.next{
-            background-color: lighten($bt_purple, 32%);
-            i{
-                background-color: $bt_purple;
-                &:before, &:after {
-                    background-color: $bt_purple;
-                }
-            }
-        }
-        .title-btn-arrow {
-            color:$bt_purple;
-        }
-    }
-}
+
+
+
 
 .title-product {
     display: -webkit-box;
@@ -459,10 +385,71 @@ a {
 
 #owl-sale {
     .view1 {
-        background-color: #f9f8fe;
+        background-color: lighten($bt_purple, 35%);
         border-radius: 20px;
         padding: 10px;
+
+        .kicker {
+            color: $bt_purple;
+        }
+
+        &.pink-bg {
+
+                background-color: lighten($bt_pink, 35%);
+                .kicker {
+                    color: $bt_pink;
+                }
+                .price small {
+                    border: 1px solid $bt_pink;
+                    background-color: $bt_pink;
+                }
+            
+        }
+
+        &.blue-bg {
+
+
+                background-color: lighten($bt_blue, 35%);
+                .kicker {
+                    color: $bt_blue;
+                }
+                .price small {
+                    border: 1px solid $bt_blue;
+                    background-color: $bt_blue;
+                }
+        
+        }
+
+        &.green-bg {
+
+           
+                background-color: lighten($bt_green, 35%);
+                .kicker {
+                    color: $bt_green;
+                }
+
+                .price small {
+                    border: 1px solid $bt_green;
+                    background-color: $bt_green;
+                }
+            
+        }
+
+        &.orange-bg {
+                background-color: lighten($bt_yellow, 35%);
+                .kicker {
+                    color: $bt_yellow;
+                }
+
+                .price small {
+                    border: 1px solid $bt_yellow;
+                    background-color: $bt_yellow;
+                }
+           
+        }
     }
+
+    
 }
 
 #owl-sale2 {
@@ -473,15 +460,13 @@ a {
         border-radius: 20px;
         padding: 10px;
 
-        .kicker {
-            color: $bt_pink;
-        }
+        
     }
 }
 
-.component .component-head .head-icon {
-    max-width:45px;
-}
+// .component .component-head .head-icon {
+//     max-width:45px;
+// }
 
 
 

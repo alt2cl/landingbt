@@ -9,13 +9,20 @@ const BlockSearch = (props) => {
         <Fragment>
             <WrapperBlock>
                 <div className="section">
-                    <ElementHead   
-                        img="https://s3.babytuto.com/565e454ba662a1a8794491dd3a4c942d.png" 
-                        title="¡Despierta! Es CyberMonday en Babytuto" 
-                        body="No te pierdas estas ofertas increíbles que tenemos para ti y tu bebé, con más de 35.000 productos y 400 marcas exclusivas." 
-                    />
-                    <ElementInputSearch />
-                    
+                    <div className="component">
+                        <div className="component-head">
+                            <ElementHead   
+                                img={props.iconHead} 
+                                title={props.titleHead} 
+                                body={props.bodyHead}
+                            />
+                        </div>
+                        <div className="component-body">
+                            <div className="d-flex justify-content-center">
+                                <ElementInputSearch />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </WrapperBlock>
             

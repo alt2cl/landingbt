@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <main className="main-container">
-        <Cyber name="ardo"></Cyber>
+        <Cyber name="Ciber BT"></Cyber>
       </main>
       
       

@@ -1,38 +1,54 @@
 import React from 'react'
+import WrapperBlock from './../wrappers/WrapperBlock'
 import WrapperCarousel from './../wrappers/WrapperCarousel'
 import CardBnr from './../cards/CardBnr'
-
+import data from '../../data/carousel';
+import dataBrand from '../../data/brands';
 
 
 
 
 const BlockMainCarousel = (props) => {
 
-    let array = []
-
-    function listCards(){
-            for (let index = 1; index <= 10; index++) {
-                array.push (
-                    <div className="item" key={index}>
-                        <CardBnr 
-                        img="https://s3.babytuto.com/62a70d22c11eb9ee6b556508944b6d4a.jpg"
-                        link="https://cybermonday.babytuto.com/?ref=landing-cyber" />
-                        <h5> {index} </h5>
-                    </div>
-                )
-            }
-        return array;
-    }
+   
     return (
         <React.Fragment>
-            <div style={{display: 'none'}}>
-                Block main Carousel 
-            </div>
-            <WrapperCarousel nav={true}>
+            <WrapperBlock>
+                <div className="section">
+                    <div className="component">
+                        
+                        <div className="component-body">
+                            <WrapperCarousel nav={true} showDesktop={2}>
+                                {data.map((props, i) => (
+                                    <div className="item" key={i}>
+                                        <CardBnr  {...props}/>
+                                    </div>
+                                ))}
+                            </WrapperCarousel>
+                        </div>
+                    </div>
+                </div>
+                <div className="section">
+                    <div className="component">
+                        <div className="component-body">
+                            <div className="list-brand d-flex flex-column justify-content-center">
+                                <ul className="d-flex justify-content-center flex-wrap">
+                                    {dataBrand.map((props, i) => (
+                                        <li key={i}>
+                                            <a rel="noopener noreferrer" href={props.link} target="_blank">
+                                                <span className="lazyload-wrapper">
+                                                    <img className="logo mini-logo" src={props.image} alt={props.name}/>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
 
-                {listCards()}
-                
-            </WrapperCarousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </WrapperBlock>
         </React.Fragment>
     )
 }

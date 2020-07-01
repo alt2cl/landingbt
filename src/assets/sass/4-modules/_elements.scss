@@ -562,35 +562,35 @@ $custom-file-text: (
 
 }
 
-.arrow {
-  width:40px;
-  border-top:3px solid #ccc;
-  position: relative;
+// .arrow {
+//   width:40px;
+//   border-top:3px solid #ccc;
+//   position: relative;
 
-  &:before {
-    content: '';
-    border-top: 3px solid #ccc;
-    position: absolute;
-    top: 3px;
-    transform: rotate(-45deg);
-    display: block;
-    width: 15px;
-    right: 0;
+//   &:before {
+//     content: '';
+//     border-top: 3px solid #ccc;
+//     position: absolute;
+//     top: 3px;
+//     transform: rotate(-45deg);
+//     display: block;
+//     width: 15px;
+//     right: 0;
 
-  }
+//   }
 
-  &:after {
-    content: '';
-    border-top: 3px solid #ccc;
-    position: absolute;
-    top: -9px;
-    transform: rotate(45deg);
-    display: block;
-    width: 15px;
-    right: 0;
+//   &:after {
+//     content: '';
+//     border-top: 3px solid #ccc;
+//     position: absolute;
+//     top: -9px;
+//     transform: rotate(45deg);
+//     display: block;
+//     width: 15px;
+//     right: 0;
 
-  }
-}
+//   }
+// }
 
 .arrow-right-menu {
   background-image: url(../img/icons/arrow_next.svg);
