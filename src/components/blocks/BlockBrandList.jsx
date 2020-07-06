@@ -18,8 +18,8 @@ const BlockSearch = (props) => {
 
                                         <li key={i}>
                                             <a rel="noopener noreferrer" href={props.link} target="_blank">
-                                                <span class="lazyload-wrapper">
-                                                    <img class="logo mini-logo" src={props.image} alt={props.name}/>
+                                                <span className="lazyload-wrapper">
+                                                    <img className="logo mini-logo" src={props.image} alt={props.name}/>
                                                 </span>
                                             </a>
                                         </li>

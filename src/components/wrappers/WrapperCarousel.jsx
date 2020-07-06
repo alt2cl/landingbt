@@ -13,7 +13,7 @@ const WrapperCarousel = (props) => {
             <OwlCarousel
                 className="owl-theme"
                 id={props.id ? props.id : 'owl-demo'}
-                dots={true}
+                dots={props.dots ? props.dots : true }
                 responsiveClass={true}
                 draggable={true}
                 nav={props.nav}
@@ -21,11 +21,11 @@ const WrapperCarousel = (props) => {
                 center={false}
                 responsive={{
                 0: {
-                    items: 1,
+                    items: props.showMobile ? props.showMobile : 1 ,
                     loop: true,
                 },
                 900: {
-                    items: props.showDesktop,
+                    items: props.showDesktop ? props.showDesktop : 3,
                     loop: false,
                 },
                 }}

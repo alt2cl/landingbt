@@ -1,5 +1,10 @@
 import React from 'react'
 import WrapperBlock from './../wrappers/WrapperBlock'
+import WrapperCarousel from './../wrappers/WrapperCarousel'
+import CardBnr from './../cards/CardBnr'
+import dataCarousel from './../../data/carousel'
+
+
 
 import ElementHead from './../elements/ElementHead'
 import ElementPills from './../elements/ElementPills'
@@ -21,7 +26,14 @@ const BlockCategoriesList = (props) => {
                             />
                         </div>
                         <div className="component-body">
-                            <ElementPills data={data} />
+                            <WrapperCarousel nav={true} showDesktop={4}>
+                                {dataCarousel.map((props, i) => (
+                                    <div className="item" key={i}>
+                                        <CardBnr  {...props}/>
+                                    </div>
+                                ))}
+                            </WrapperCarousel>
+                            <ElementPills data={data} maxwidth={650} />
                         </div>
                     </div>
                     

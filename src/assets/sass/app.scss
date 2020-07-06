@@ -31,17 +31,19 @@
 // 6 - Import layout  styles
 @import '6-override/index';
 
-.view1 .thumb img {
-    height: 120px;
-    width: auto!important;
-    margin-left: 50%;
-    transform: translate(-50%);
-}
+// .view1 .thumb img {
+//     height: 240px;
+//     width: auto!important;
+//     margin-left: 50%;
+//     transform: translate(-50%);
+// }
 
-.view1 .thumb {
-    flex: 0 0 120px;
-}
+// .view1 .thumb {
+//     flex: 0 0 120px;
+// }
 
 .item-content {
     text-align: left;
 }
+
+

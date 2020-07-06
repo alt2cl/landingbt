@@ -9,14 +9,14 @@ const CardProduct = (props) => {
     return (
 
         <React.Fragment>
-            <div className="view1 hr-item d-flex flex-column">
+            <div className="view1 d-flex flex-column">
                 <div className="media"> 
                     <span className="offerTag xs">-33% {props.offer}</span> 
                     <a href="/" className="thumb">
-                        <img src={props.image} alt="" className="d-block w-100"/>
+                        <img src={props.image} alt="" className="h-100"/>
                     </a>
                 </div> 
-                <div className="item-content d-flex flex-column">
+                <div className="item-content d-flex flex-column mt-auto">
                     <span className="kicker">
                         {props.name}
                     </span> 
@@ -41,7 +41,7 @@ const CardProduct = (props) => {
                         <span className="cost">
                             ${props.price}
                         </span> 
-                        <small className="sale-price">-50%</small>
+                        {/* <small className="sale-price">-50%</small> */}
                     </div>
                 </div>
             </div>

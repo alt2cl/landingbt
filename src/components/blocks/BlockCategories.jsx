@@ -36,23 +36,27 @@ const BlockCategories = (props) => {
                             />
                         </div>
                         <div className="component-body">
+                            <div className="section">
+                                <WrapperCarousel nav={false} showDesktop={props.showBnr}>
+                                    {dataSection.banners.map((props, i) => (
+                                        <div className="item" key={'card-bnr-'+i}>
+                                            <CardBnr  {...props}/>
+                                        </div>
+                                    ))}
+                                </WrapperCarousel>
+                            </div>
+                            <div className="section">
+                                <WrapperTabs tabsIds={dataSubcategories}>
+                                    {dataSubcategories.map((item, index) => (
+                                        <div key={'k-'+index}>
+                                        <WrapperList productos={item.products} i={'in-'+index} ></WrapperList>
 
-                            <WrapperCarousel nav={false} showDesktop={3}>
-                                {dataSection.banners.map((props, i) => (
-                                    <div className="item" key={i}>
-                                        <CardBnr  {...props}/>
-                                    </div>
-                                ))}
-                            </WrapperCarousel>
+                                        </div>
 
-                            <WrapperTabs tabsIds={dataSubcategories}>
 
-                                {dataSubcategories.map((item, index) => (
-                                    <WrapperList productos={item.products} ></WrapperList>
-
-                                ))}
-
-                            </WrapperTabs>
+                                    ))}
+                                </WrapperTabs>
+                            </div>
 
                         </div>
                     </div>

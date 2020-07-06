@@ -41,7 +41,7 @@
 }
 
 #owl-demo {
-    padding-bottom:40px;
+    //padding-bottom:40px;
     .owl-item {
         .item{
             margin: 0 12px;
@@ -94,6 +94,7 @@
     border-radius: 50%;
     margin: 0 3px;
     border:0 none;
+    
 
     &:hover, &:focus {
         background-color: darken(#dee2e6, 5%) ; 

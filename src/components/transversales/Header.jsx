@@ -23,7 +23,7 @@ export default function Header() {
   return (
     
     <React.Fragment>
-              <nav className="main-nav navbar py-0  navbar-light pr-0">
+              <nav className="main-nav navbar py-0  navbar-light pr-0 pl-0">
                   <div className="d-flex" >
                       {/* <a href="/" className="navbar-toggler" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                           <img src={iconMenu} alt="menu" className="menu"/>
@@ -56,12 +56,12 @@ export default function Header() {
             </form>
         </div>
     </div>
-    <div className="option-item d-none d-lg-flex">
+    {/* <div className="option-item d-none d-lg-flex">
         <a href="/" className="btn btn-link right-options " type="submit">
           <img src={iconBlog} alt="blog" className="cart"/>
           <span className="d-none d-xl-inline-block">Ir al Blog</span>
         </a>
-    </div>
+    </div> */}
 
     <div className="option-item d-none d-lg-flex">
     {/* <a href="/perfil" className="['btn', 'btn-link', 'right-options', activo === 'perfil' ? 'active': 'inactive' ]" type="submit"> */}
@@ -72,8 +72,7 @@ export default function Header() {
         </a>
     </div>
 
-    <div className="option-item ">
-    {/* <a href="/checkout" className="['btn', 'btn-link', 'right-options', activo === 'checkout' ? 'active': 'inactive']" type="submit"> */}
+    {/* <div className="option-item ">
 
         <a href="/checkout" className={'btn btn-link right-options'} type="submit">
           <img src={iconCart} alt="carro" className="cart"/>
@@ -83,19 +82,19 @@ export default function Header() {
             <span className="cost">$169.990</span>
           </div>
         </a>
-    </div>
+    </div> */}
 
-    <div className="option-item d-none d-lg-flex">
+    {/* <div className="option-item d-none d-lg-flex">
         <a href="/" className="btn btn-link right-options "  data-toggle="modal" data-target="#staticBackdrop2">
           <img src={iconGirl} alt="user" className="cart"/>
           <span className="d-none d-xl-inline-block" >Iniciar Sesión</span>
         </a>
-    </div>
-    <div className="option-item d-none d-lg-flex">
+    </div> */}
+    {/* <div className="option-item d-none d-lg-flex">
         <a href="/" className="btn btn-link right-options " data-toggle="modal" data-target="#staticBackdrop">
           <span className="d-none d-xl-inline-block">Registrarme</span>
         </a>
-    </div>
+    </div> */}
 
     <div className="option-item d-none d-lg-flex">
       <a className="btn btn-link right-options " data-toggle="collapse" href="#drop-user"  aria-expanded="false" aria-controls="drop-user">

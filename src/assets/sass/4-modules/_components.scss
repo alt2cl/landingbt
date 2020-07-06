@@ -3,15 +3,29 @@ $grayEnabled: #999999;
 
 
 .component {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+
+
+    @media(min-width:992px){
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+    }
 
     .component-head {
-        margin-bottom: 15px;
+        @media(min-width:992px){
+            margin-bottom: 15px;
+        }
         .head-icon {
             margin-bottom: 10px;
-            max-height: 45px;
+            max-height: 30px;
+            @media(min-width:992px){ 
+                max-height: 45px;
+            }
+
+            
         }
         h3 {
             color: #323232;
@@ -50,6 +64,7 @@ $grayEnabled: #999999;
 
         .head-section-call {
             line-height: 35px;
+            margin-bottom: 15px;
             .icon-head {
                 margin-right: 5px;
                 min-height: 24px;
@@ -236,6 +251,10 @@ $grayEnabled: #999999;
     overflow-x: auto;
 }
 
+.nav-pills {
+    overflow-x: auto;
+}
+
 .tab-head.hs-xs {
     .nav-pills {
         li {
@@ -334,6 +353,11 @@ $grayEnabled: #999999;
         flex-flow: wrap;
         position: relative;
 
+        @media (max-width: 991px) {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
         &:after {
             content: "";
             width: 2px;
@@ -349,15 +373,34 @@ $grayEnabled: #999999;
             // border-bottom:1px solid #ebeaf1;
             padding: 10px;
 
-            .thumb {
-                width: 100%;
-                height: auto;
-                max-width: 200px;
-                margin:0 auto;
+            @media (max-width: 991px) {
+                min-width: 170px;
             }
+
+            .media {
+                padding-bottom: 100%;
+                .thumb {
+                    width: 100%;
+                    height: auto;
+                    max-width: 250px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: absolute;
+                    padding-bottom: 100%;
+    
+                    img {
+                        position: absolute;
+                        left: 50%;
+    transform: translate(-50%);
+                    }
+                }
+            }
+
+            
 
             @media (min-width: 768px) {
                 max-width: 20%;
+                display: flex;
             }
         }
 
@@ -714,7 +757,10 @@ transition: opacity 0.5s ease;
 
 
 .owl-carousel {
-    padding:2em 0;
+    // @media(min-width: 992px){
+    //     padding:2em 0;
+    // }
+    
 
     &:after {
         content: '';
@@ -776,6 +822,7 @@ transition: opacity 0.5s ease;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    z-index: 2;
 }
 
 .featureIcon {
@@ -1898,21 +1945,26 @@ transition: opacity 0.5s ease;
 
 .filter-item {
     margin-bottom: 10px;
-    flex-grow: 1;
+    // flex-grow: 1;
     label {
         margin-right: 10px;
     }
 }
 
 .filter-product-box {
+    overflow-x: auto;
+    @media (min-width: 768px) {
+        overflow-x: inherit;
+
+    }
     
     label {
         margin-bottom: 0;
         white-space: nowrap;
-        @media (max-width: 991px) {
-            width: 120px;
-            text-align: right;
-        }
+        // @media (max-width: 991px) {
+        //     width: 120px;
+        //     text-align: right;
+        // }
     }
 
     select {
@@ -1921,6 +1973,8 @@ transition: opacity 0.5s ease;
         border-radius: 25px;
         font-size: 13px;
         font-weight: bold;
+        z-index: 99999;
+        opacity: 0;
 
 
     }
@@ -1937,6 +1991,20 @@ transition: opacity 0.5s ease;
 .introEtapaBox {
     display: flex;
     align-items: flex-start;
+    height: 100%;
+
+    img {
+        min-width: 70px ;
+    }
+
+    h4 {
+        color: $primary;
+        font-weight: 24px;
+    }
+
+    p {
+        font-style: italic;
+    }
 }
 
 .compareItems {
@@ -1966,6 +2034,7 @@ transition: opacity 0.5s ease;
         min-height: 82px;
         margin-bottom: 0;
         background: none;
+        position: relative;
     }
 
 }
@@ -2194,6 +2263,7 @@ transition: opacity 0.5s ease;
         background-image: url('../img/icons/arrow_down.svg');
         background-position: center right;
         background-repeat: no-repeat;
+        
     }
 
 }
@@ -2742,7 +2812,7 @@ transition: opacity 0.5s ease;
 }
 
 .filter-product-box {
-    max-width: 320px;
+    // max-width: 320px;
     margin:0 auto;
 }
 

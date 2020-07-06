@@ -25,7 +25,7 @@ const WrapperTabs = (props) => {
                         </li>
                     ))}
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
+                <div className="tab-content" id="pills-tabContent">
                     {props.tabsIds.map((item, index) => (
                         <div  className={classNames('tab-pane', 'fade', index === 0 ? 'show active': null)} aria-labelledby={'pill-'+item.id} role="tabpanel" id={'id'+item.id} key={index}>
                         

@@ -127,16 +127,14 @@ a {
 
 .owl-nav {
     //position: absolute;
-    width: calc(100% + 30px);
+    width: calc(100% + 60px);
     display: flex;
     justify-content: space-between;
-    //top: 50%;
-    //margin-top: -40px!important;
-    margin-left: -15px;
+    margin-left: -40px;
 
     .owl-prev {
         position: absolute;
-        bottom: 50%;
+        bottom: calc(50% - 20px);
         span {
             font-size: 23px;
             display: block;
@@ -146,7 +144,7 @@ a {
 
     .owl-next {
         position: absolute;
-        bottom: 50%;
+        bottom: calc(50% - 20px);
         right:-18px;
 
         span {
@@ -166,7 +164,9 @@ a {
 
 
 .owl-theme .owl-dots {
-    margin-top:10px;
+    //margin-top:10px;
+    display: flex;
+    justify-content: center;
 
     .owl-dot span {
         width: 20px;
@@ -403,6 +403,9 @@ a {
                     border: 1px solid $bt_pink;
                     background-color: $bt_pink;
                 }
+                .offerTag {
+                    background-color: $bt_pink;
+                }
             
         }
 
@@ -467,6 +470,142 @@ a {
 // .component .component-head .head-icon {
 //     max-width:45px;
 // }
+
+.dropdown {
+    .btn-light {
+        border-radius: 20px;
+        background-color: #f7f6f9;
+        padding-right: 35px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-menu {
+        border-color:#fff;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+
+        .dropdown-item {
+            font-size: 12px;
+
+            &.item-more {
+                color: $primary;
+            }
+        }
+    }
+
+    .dropdown-toggle::before {
+        display: inline-block;
+        margin-left: 0em;
+        vertical-align: 0.255em;
+        content: "";
+        border-right: 1px solid #999;
+        height: 6px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 14px;
+        right: 14px;
+    }
+
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 1.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0;
+        border-right: 1px solid #999;
+        border-bottom: 0;
+        border-left: 0;
+        height: 6px;
+        transform: rotate(-45deg);
+        position: absolute;
+        top:14px;
+        right: 18px;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+    background: none;
+
+    &:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+    
+
+    span {
+        position: relative;
+        text-indent: -99999px;
+        &:before, &:after {
+            content:"";
+            width: 15px;
+            height: 2px;
+            border-radius: 3px;
+            background-color: #999;
+            position: absolute;
+        }
+    }
+}
+
+.owl-prev {
+    left: -24px;
+    @media (min-width: 992px){
+        left: -37px;
+    }
+    
+    span { 
+        &:before {
+            transform: rotate(-135deg);
+            left: 11px;
+            top:22px;
+
+        }
+        &:after {
+            transform: rotate(135deg);
+            left: 11px;
+            top:13px;
+            
+        }
+
+    }
+
+}
+
+.owl-next {
+    right: -24px!important;
+    @media (min-width: 992px){
+        right: -37px!important;
+    }
+    
+    span { 
+        &:before {
+            transform: rotate(135deg);
+            right: 11px;
+            top:22px;
+
+        }
+        &:after {
+            transform: rotate(-135deg);
+            right: 11px;
+            top:13px;
+            
+        }
+
+    }
+
+}
+
+.stage-list-product  {
+    li {
+        @media (min-width: 992px){
+            min-width: 33%;
+
+        }
+        
+    }
+}
+
+.btn-group-wrap  {
+    overflow-x: auto;
+}
 
 
 

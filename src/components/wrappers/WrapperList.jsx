@@ -4,12 +4,11 @@ import CardProduct from '../cards/CardProduct'
 const WrapperList = (props) => {
     return (
         <React.Fragment>
-            <div className="list-product-box list-product-end-article">
+            <div className="list-product-box list-product-end-article" >
                 <ul className="list-product d-flex">
                 {props.productos.map((item, index) => (
-                    <li key="index">
+                    <li key={'lp'+index}>
                         <CardProduct {...item} />
-
                     </li>
                 ))}
 

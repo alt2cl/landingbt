@@ -386,7 +386,7 @@ $bt_gray_bg:      #F7F6F9;
 
     .owl-prev {
         position: absolute;
-        bottom: 50%;
+        bottom: calc(50% - 20px);
         span {
             font-size: 23px;
             display: block;
@@ -396,7 +396,7 @@ $bt_gray_bg:      #F7F6F9;
 
     .owl-next {
         position: absolute;
-        bottom: 50%;
+        bottom: calc(50% - 20px);
         right:-18px;
 
         span {

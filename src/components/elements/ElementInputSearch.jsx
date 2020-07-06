@@ -16,7 +16,7 @@ export default function ElementInputSearch(props) {
                     </form>
 
                 </div>
-                <div className="resultados" >
+                <div className="resultados" style={{display: 'none'}} >
                     <div className="list-result">
                         <h5 className="title-section-search pink-text">CATEGORÍA</h5>
                         <ul className="resultados-list">

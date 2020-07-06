@@ -1,11 +1,11 @@
 import React from 'react';
 import BlockSearch from './../blocks/BlockSearch'
 import BlockMainCarousel from './../blocks/BlockMainCarousel'
-import BlockBrandList from './../blocks/BlockBrandList'
 import BlockBabyPacks from './../blocks/BlockBabyPacks'
-import BlockFlashOffer from './../blocks/BlockFlashOffer'
 import BlockBabyStages from './../blocks/BlockBabyStages'
 import BlockCategoriesList from './../blocks/BlockCategoriesList'
+import BlockNewsletter from './../blocks/BlockNewsletter'
+
 import BlockCategories from './../blocks/BlockCategories'
 import BlockGuide from './../blocks/BlockGuide'
 import BlockProductPagination from './../blocks/BlockProductPagination'
@@ -16,6 +16,12 @@ import dataFlashOffer from './../../data/flash';
 import iconHeart from '../../assets/img/icons/heart.png'
 import iconClock from '../../assets/img/icons/clock-purple.svg'
 import iconBT from '../../assets/img/logos/bt_cm_hero.svg'
+import iconNewsletter from '../../assets/img/icons/mailOrange.svg'
+import iconBrands from './../../assets/img/logos/headBrands.png'
+
+
+
+import BlockContact from '../blocks/BlockContact';
 
 
 
@@ -26,12 +32,19 @@ const Cyber = ({name}) => {
           
             <BlockSearch 
                 name="BlockSearch"
-                iconHead={iconBT} 
+                iconHead={iconBrands} 
                 titleHead="¡Despierta! Es CyberMonday en Babytuto" 
-                bodyHead="No te pierdas estas ofertas increíbles que tenemos para ti y tu bebé, con más de 35.000 productos y 400 marcas exclusivas."
+                bodyHead="No te decimos como criar, sí como comprar."
                 />  
 
-            <BlockMainCarousel />
+            <BlockMainCarousel  />
+
+            <BlockBabyPacks 
+                offerFlash 
+                data={dataFlashOffer}
+                iconHead={iconClock} 
+                titleHead="¡Ofertas Flash!" 
+                bodyHead="No te pierdas estas ofertas por un tiempo limitado"  />
             
             <BlockBabyPacks 
                 bgColor="pink"
@@ -40,30 +53,38 @@ const Cyber = ({name}) => {
                 titleHead="¡Baby Packs!" 
                 bodyHead="Revisa nuestra selección de productos que combinan bien juntos."  />
 
-            <BlockBabyPacks 
-                offerFlash 
-                data={dataFlashOffer}
-                iconHead={iconClock} 
-                titleHead="¡Ofertas Flash!" 
-                bodyHead="No te pierdas estas ofertas por un tiempo limitado"  />
+            
 
             <BlockBabyStages
                 titleHead="Etapas de tu bebé" 
                 bodyHead="Conoce los +35.000 productos específicos para cada una de las etapas de tu bebé" />
 
+            <BlockNewsletter
+                iconHead={iconNewsletter} 
+                titleHead="Suscríbete a Nuestro Newsletter" 
+                bodyHead="Suscríbete para recibir las mejores ofertas para tu bebé en tu email" />
+
+            
+
+            
+            
             <BlockCategoriesList 
                 titleHead="Filtra productos por categoría" 
                 bodyHead="Selecciona y navega por productos en su categoría" />
 
-            <BlockCategories blockNumber={0}/>
+            <BlockCategories blockNumber={0} showBnr={1}/>
 
-            <BlockCategories blockNumber={1}/>
 
-            <BlockCategories blockNumber={2}/>
 
-            <BlockCategories blockNumber={3}/>
+            <BlockCategories blockNumber={1}  showBnr={4}/>
 
-            <BlockCategories blockNumber={4}/>
+            <BlockCategories blockNumber={2}  showBnr={3}/>
+
+            <BlockContact />
+
+            <BlockCategories blockNumber={3}  showBnr={2}/>
+
+            <BlockCategories blockNumber={4}  showBnr={3}/>
 
             <BlockGuide 
                 titleHead="Guía de Compras para Padres" 

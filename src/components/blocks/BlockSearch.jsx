@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react'
 import WrapperBlock from './../wrappers/WrapperBlock'
-import ElementHead from './../elements/ElementHead'
+import ElementHead from './../elements/ElementHead2'
 import ElementInputSearch from './../elements/ElementInputSearch'
+import ElementFilter from './../elements/ElementFilter'
+import dataFilter from './../../data/search-filter'
+
 
 
 const BlockSearch = (props) => {
@@ -21,6 +24,14 @@ const BlockSearch = (props) => {
                             <div className="d-flex justify-content-center">
                                 <ElementInputSearch />
                             </div>
+
+
+                            <ElementFilter data={dataFilter}/>
+                           
+
+                            
+
+
                         </div>
                     </div>
                 </div>
@@ -30,5 +41,7 @@ const BlockSearch = (props) => {
         
     )
 }
+
+
 
 export default BlockSearch;
