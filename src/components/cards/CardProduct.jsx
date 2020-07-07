@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react';
 import IconCard from '../../assets/img/icons/card.svg'
 import IconTruck from '../../assets/img/icons/truck.svg'
 import IconCockade from '../../assets/img/icons/cockade.svg'
 
 
 const CardProduct = (props) => {
-    //console.log('contenido card: ',props)
+
+    //const [oldprice, setOldprice] = useState(0);
+
+    //setOldprice(props.oldprice)
+
+    function numberWithDot(x) {
+        //return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
+        if(x > 1000){
+            return x.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+        } else {
+            return x
+        }
+        
+    }
+
+    //console.log('old price: ', numberWithDot(1000))
     return (
 
         <React.Fragment>
@@ -35,11 +50,11 @@ const CardProduct = (props) => {
                         </span>
                     </div> 
                     <small className="oldPrice">
-                    ${props.old_price}
+                    ${numberWithDot(props.oldprice)} 
                     </small> 
                     <div className="price">
                         <span className="cost">
-                            ${props.price}
+                            $ {numberWithDot(props.price)}
                         </span> 
                         {/* <small className="sale-price">-50%</small> */}
                     </div>

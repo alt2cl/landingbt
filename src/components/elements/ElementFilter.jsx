@@ -5,11 +5,11 @@ const ElementFilter =(props)=> {
     <div className="filter-product-box d-flex justify-content-md-center">
 
 			{
-				props.data.map((filter, i)=>(
+				props.data.map((filter, ii)=>(
 
 					<React.Fragment>
 
-					<div className="filter-item mx-3 d-flex align-items-center justify-content-between dropdown position-relative" key={'filter-'+i}>
+					<div className="filter-item mx-3 d-flex align-items-center justify-content-between dropdown position-relative" key={'filter-'+ii}>
 						{
 							filter.showLabel ? <label>{filter.label}</label>  : null
 						}
@@ -20,8 +20,8 @@ const ElementFilter =(props)=> {
 							
 							<div className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 								{
-									filter.items.map((item, i)=> (
-									<a className="dropdown-item" href="#" key={'item-filter-'+ i}>{item}</a>
+									filter.items.map((item,i)=> (
+									<a className="dropdown-item" href="/" key={'item-filter-'+(ii+i)}>{item}</a>
 									))
 								}
 								{
@@ -38,10 +38,10 @@ const ElementFilter =(props)=> {
 						</div>
 
 
-						<select class="form-control d-flex d-md-none position-absolute">
+						<select className="form-control d-flex d-md-none position-absolute">
 							{
 									filter.items.map((item, i)=> (
-									<option className="dropdown-item" href="#" key={'item-filter-option'+ i}>{item}</option>
+									<option className="dropdown-item" href="#" key={'item-filter-option'+ (i+ii+1)}>{item}</option>
 									))
 							}
 							

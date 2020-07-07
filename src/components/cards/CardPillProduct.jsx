@@ -2,6 +2,22 @@ import React, { Fragment } from 'react'
 import classNames from 'classnames'
 
 const CardBnr = (props) => {
+
+   
+
+    function numberWithDot(x) {
+        //return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
+        if(x > 1000){
+            return x.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+        } else {
+            return x
+        }
+        
+    }
+
+    
+
+
     
     return (
         <Fragment>
@@ -20,11 +36,11 @@ const CardBnr = (props) => {
                             {props.title}
                             </a>
                             <small className="oldPrice">
-                            <span>${props.old_price}</span>
+                            <span>${numberWithDot(props.oldprice)}</span>
                             </small>
                             <div className="price">
                                 <span>
-                                    <span>${props.price}</span>
+                                    <span>${numberWithDot(props.price)} </span>
                                 </span>
                                 
                             </div>
