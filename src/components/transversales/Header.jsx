@@ -11,6 +11,7 @@ import iconCart from './../../assets/img/icons/cart.svg'
 import iconMenu from './../../assets/img/icons/menu.svg'
 import iconGirl from './../../assets/img/icons/girl.svg'
 import iconBtLogo from './../../assets/img/logos/bt_logo.svg'
+import iconBtCyberLogo from './../../assets/img/logos/bt-cyber.png'
 
 
 
@@ -30,7 +31,7 @@ export default function Header() {
                       </a>  */}
                       {/* <!-- Clase "navbar-brand-half" se agrega o quita para motrar logo entero o solo ideologo --> */}
                       <a className="navbar-brand ml-3 " href="/home">
-                          <img alt="" src={iconBtLogo} />
+                          <img alt="" src={iconBtCyberLogo} />
                       </a>
                   </div>
 
@@ -54,6 +55,47 @@ export default function Header() {
                   <img src={iconClosed} alt="closed" className="magnifier"/>
                 </a>
             </form>
+            <div className="resultados">
+              <div className="list-result">
+                <h5 className="title-section-search pink-text">CATEGORÍA</h5>
+                <ul className="resultados-list">
+                  <li>
+                    <a href="/">
+                    <h3 className="title">Silla para Auto Infanti: Elite SPS</h3></a>
+                  </li>
+                  <li>
+                    <a href="/">
+                    <h3 className="title">Silla para Auto Infanti: Elite SPS</h3></a>
+                  </li>
+                </ul>
+              </div>
+              <div className="list-result">
+                <h5 className="title-section-search green-text">MARCA</h5>
+                <ul className="resultados-list">
+                  <li>
+                    <a href="/">
+                    <h3 className="title">Silla para Auto Infanti: Elite SPS</h3></a>
+                  </li>
+                  <li>
+                    <a href="/">
+                    <h3 className="title">Silla para Auto Infanti: Elite SPS</h3></a>
+                  </li>
+                </ul>
+              </div>
+              <div className="list-result">
+                <h5 className="title-section-search purple-text">PRODUCTOS</h5>
+                <ul className="resultados-list">
+                  <li>
+                    <a href="/">
+                    <h3 className="title">Silla para Auto Infanti: Elite SPS</h3></a>
+                  </li>
+                  <li>
+                    <a href="/">
+                    <h3 className="title">Silla para Auto Infanti: Elite SPS</h3></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </div>
     </div>
     {/* <div className="option-item d-none d-lg-flex">
@@ -72,7 +114,7 @@ export default function Header() {
         </a>
     </div>
 
-    {/* <div className="option-item ">
+    <div className="option-item ">
 
         <a href="/checkout" className={'btn btn-link right-options'} type="submit">
           <img src={iconCart} alt="carro" className="cart"/>
@@ -82,21 +124,21 @@ export default function Header() {
             <span className="cost">$169.990</span>
           </div>
         </a>
-    </div> */}
+    </div>
 
-    {/* <div className="option-item d-none d-lg-flex">
+    <div className="option-item d-none d-lg-flex">
         <a href="/" className="btn btn-link right-options "  data-toggle="modal" data-target="#staticBackdrop2">
           <img src={iconGirl} alt="user" className="cart"/>
-          <span className="d-none d-xl-inline-block" >Iniciar Sesión</span>
+          <span className="d-none d-xl-inline-block" >Entrar</span>
         </a>
-    </div> */}
+    </div>
     {/* <div className="option-item d-none d-lg-flex">
         <a href="/" className="btn btn-link right-options " data-toggle="modal" data-target="#staticBackdrop">
           <span className="d-none d-xl-inline-block">Registrarme</span>
         </a>
     </div> */}
 
-    <div className="option-item d-none d-lg-flex">
+    {/* <div className="option-item d-none d-lg-flex">
       <a className="btn btn-link right-options " data-toggle="collapse" href="#drop-user"  aria-expanded="false" aria-controls="drop-user">
         <img src={iconGirl} alt="user" className="cart"/>
         <div className="title-loged d-none d-xl-inline-block">
@@ -159,7 +201,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
-  </div>
+  </div> */}
 
     
 </div>

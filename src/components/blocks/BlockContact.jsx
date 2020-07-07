@@ -8,7 +8,7 @@ const BlockContact = () => {
     return (
         <WrapperBlock>
                 <div className="section">
-                <div className="d-flex flex-column flex-sm-row justify-content-center ">
+                <div className="d-flex flex-column flex-lg-row justify-content-center ">
                     <ElementNewsletter />
                     <ElementContact />
                 </div>
