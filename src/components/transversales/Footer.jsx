@@ -6,6 +6,10 @@ import logoPaypal from './../../assets/img/logos/paypal.png'
 import logoRedCompra from './../../assets/img/logos/redCompra.png'
 
 import logoMercadoPago from './../../assets/img/logos/mercadoPago.png'
+import iconFacebook from './../../assets/img/icons/facebook.svg'
+import iconTwitter from './../../assets/img/icons/twitter.svg'
+import iconInstagram from './../../assets/img/icons/instagram.svg'
+
 
 
 
@@ -57,12 +61,18 @@ const Footer = () => {
                             <div className="col">
                                 <div className="list-footer">
                                     <h6>CONÉCTATE</h6>
-                                    <p>
-                                        <a className="facebook-icon" href="/">Item</a> 
-                                        <a className="twitter-icon" href="/">Item</a>
-                                        <a className="instagram-icon" href="/">Item</a> 
+                                    <p className="wrap-rrss">
+                                        <a className="facebook-icon" href="/">
+                                            <img src={iconFacebook} alt="facebook"/>
+                                        </a> 
+                                        <a className="twitter-icon" href="/">
+                                            <img src={iconTwitter} alt="Twitter"/>
+                                        </a>
+                                        <a className="instagram-icon" href="/">
+                                            <img src={iconInstagram} alt="Instagram"/>
+                                        </a> 
                                     </p>
-                                    <h6>SUSCRÍBETE AL NEWSLETTER</h6>
+                                    <h6>SUSCRÍBETE AL NEWSLETInstagram</h6>
                                     <p>Recibe nuestras promociones exclusivas, descuentos y mucho más</p>
                                     
                                 </div>
@@ -79,6 +89,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+               
            
         </React.Fragment>
         
