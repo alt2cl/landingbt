@@ -22,6 +22,7 @@ import iconBrands from './../../assets/img/logos/headBrands.png'
 
 
 import BlockContact from '../blocks/BlockContact';
+import Footer from '../transversales/Footer';
 
 
 
@@ -93,6 +94,8 @@ const Cyber = ({name}) => {
             <BlockProductPagination 
                 titleHead="Todos nuestros productos en oferta" 
                 bodyHead="" />
+
+           
         
         </React.Fragment>
     )

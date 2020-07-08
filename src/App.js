@@ -3,6 +3,7 @@ import React from 'react';
 //import './App.css';
 import Header from './components/transversales/Header'
 import Cyber from './components/pages/Cyber'
+import Footer from './components/transversales/Footer';
 
 
 
@@ -13,8 +14,7 @@ function App() {
       <main className="main-container">
         <Cyber name="Ciber BT"></Cyber>
       </main>
-      
-      
+      <Footer/>
     </div>
   );
 }
