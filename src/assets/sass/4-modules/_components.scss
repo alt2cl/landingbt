@@ -374,7 +374,7 @@ $grayEnabled: #999999;
             padding: 10px;
 
             @media (max-width: 991px) {
-                min-width: 170px;
+                min-width: 172px;
             }
 
             .media {
@@ -401,6 +401,12 @@ $grayEnabled: #999999;
             @media (min-width: 768px) {
                 max-width: 20%;
                 display: flex;
+            }
+        }
+
+        &.stage-list-product  {
+            > li {
+                    min-width: 33%;
             }
         }
 
@@ -1131,9 +1137,11 @@ transition: opacity 0.5s ease;
                 max-width: 20%;
             }
 
+            .list-product.stage-list-product  > li {
+                min-width: 33%;
+            }
+
         }
-
-
     }
 }
 

@@ -36,9 +36,9 @@ const BlockBabyStages = (props) => {
                            
                             <WrapperTabsStages dataTabsSatges={dataTabsStages}>
                                 {dataTabsStages.map((item, index) => (
-
+                                    <div className="container">
                                         <div className="row" key="index">
-                                            <div className="col-12 col-md-5">
+                                            <div className="col-12 col-lg-5">
 
                                                 <div className="introEtapaBox d-flex flex-column">
                                                     <div>
@@ -52,7 +52,7 @@ const BlockBabyStages = (props) => {
                                                 </div>
 
                                             </div>
-                                            <div className="col-12 col-md-7">
+                                            <div className="col-12 col-lg-7">
                                                 <div className="list-product-box list-product-end-article">
                                                 <ul className="list-product d-flex stage-list-product">
                                                     <li>
@@ -72,6 +72,10 @@ const BlockBabyStages = (props) => {
                                             </div>
 
                                         </div>
+
+                                    </div>
+
+                                        
                                     
                                     
                                     
