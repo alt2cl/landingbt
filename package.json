@@ -38,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "axios": "^0.18",
+    "axios": "^0.21",
     "cross-env": "^5.1",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
